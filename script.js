@@ -1,6 +1,5 @@
-// Characters to be escaped [.*+?^${}()|[\]\\] 
-
-function searching(){
+function searching()
+{
     let Search_text = document.getElementById("search_text").value;
     let paragraph = document.getElementById("full_paragraph");
     Search_text = Search_text.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
